@@ -36,16 +36,30 @@ const BjjLandingPage = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-4">
-                <Badge className="bg-red-100 text-red-800 border-red-200">
-                  PROBLÈME RÉSOLU
+                <Badge className="bg-blue-100 text-blue-900 border-blue-300">
+                  MÉTHODE ÉPROUVÉE
                 </Badge>
-                <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-tight">
-                  Arrête de <span className="text-red-600">paniquer</span> en garde fermée
+                <h1 className="text-4xl lg:text-5xl font-bold text-blue-900 leading-tight">
+                  CONSTRUIS UN JEU DANGEREUX DEPUIS TA GARDE
+                  <br />
+                  <span className="text-blue-700">MÊME SI T'ES DÉBUTANT</span>
                 </h1>
-                <p className="text-xl text-gray-600 leading-relaxed">
-                  Tu en as marre d'être paumé quand tu te retrouves sur le dos ? 
-                  Construis enfin un jeu de garde <strong>logique, dangereux et imparable</strong> 
-                  avec notre système complet en 4 semaines.
+                <p className="text-lg text-blue-800 font-medium leading-relaxed">
+                  La méthode qui te donne un vrai jeu en garde - sans te perdre dans 100 techniques
+                </p>
+                <p className="text-xl text-gray-700 leading-relaxed">
+                  Construis enfin un jeu de garde <strong className="text-blue-900">logique, dangereux et imparable</strong> 
+                  avec notre système complet + programmation physique pour l'été.
+                </p>
+              </div>
+              
+              <div className="bg-red-50 border-2 border-red-200 rounded-lg p-6">
+                <div className="flex items-center space-x-2 mb-3">
+                  <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
+                  <span className="text-red-800 font-bold text-lg">OFFRE SPÉCIALE - 10 PREMIERS UNIQUEMENT</span>
+                </div>
+                <p className="text-red-700 font-medium">
+                  <strong>🎁 BONUS EXCLUSIF :</strong> Programmation physique spéciale été incluse pour être prêt pour septembre !
                 </p>
               </div>
               
@@ -53,20 +67,29 @@ const BjjLandingPage = () => {
                 <Button 
                   onClick={handlePurchase}
                   size="lg" 
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
+                  className="bg-blue-900 hover:bg-blue-800 text-white px-8 py-4 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
                 >
-                  Je construis mon jeu maintenant - 39€
+                  Je construis mon jeu maintenant - 49€
                 </Button>
-                <div className="flex items-center space-x-2 text-sm text-gray-500">
+                <div className="flex items-center space-x-2 text-sm text-gray-600">
                   <CheckCircle className="w-4 h-4 text-green-600" />
                   <span>Accès immédiat après paiement</span>
                 </div>
               </div>
 
-              <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-                <p className="text-sm text-yellow-800">
-                  <strong>⚡ Prix de lancement :</strong> 39€ au lieu de 69€ - Offre limitée
-                </p>
+              <div className="bg-yellow-50 border-2 border-yellow-300 rounded-lg p-4">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="text-lg font-bold text-yellow-800">
+                      <span className="text-2xl">49€</span> 
+                      <span className="text-base line-through text-gray-500 ml-2">69€</span>
+                    </p>
+                    <p className="text-sm text-yellow-700">
+                      <strong>Prix de lancement</strong> + Programmation physique été OFFERTE
+                    </p>
+                  </div>
+                  <Badge className="bg-red-500 text-white">-29%</Badge>
+                </div>
               </div>
             </div>
 
