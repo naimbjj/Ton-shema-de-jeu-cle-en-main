@@ -222,10 +222,10 @@ const BjjLandingPage = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl font-bold text-blue-900 mb-4">
               Programme d'entraînement structuré - 4 semaines
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-700">
               Chaque semaine a un objectif précis pour construire ton jeu progressivement
             </p>
           </div>
