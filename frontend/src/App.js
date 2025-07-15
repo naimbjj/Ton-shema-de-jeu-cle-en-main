@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import axios from "axios";
-import BjjLandingPage from "./components/BjjLandingPage";
+import BjjLandingPageV2 from "./components/BjjLandingPageV2";
 
 const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
 const API = `${BACKEND_URL}/api`;
@@ -21,7 +21,7 @@ const Home = () => {
     helloWorldApi();
   }, []);
 
-  return <BjjLandingPage />;
+  return <BjjLandingPageV2 />;
 };
 
 function App() {
