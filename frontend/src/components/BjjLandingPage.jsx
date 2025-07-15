@@ -8,7 +8,7 @@ import { CheckCircle, Star, Calendar, Download, Play, Users, Target, Trophy } fr
 const BjjLandingPage = () => {
   const handlePurchase = () => {
     // Mock purchase action
-    alert('Redirection vers le système de paiement... (Mock)');
+    alert('Redirection vers le système de paiement...\n\nPACK COMPLET:\n• Mindmap BJJ Guard Master\n• Vidéo explicative complète\n• Programme 4 semaines\n• PDF "10 erreurs à éviter"\n• Vidéo "Être dangereux sur le dos"\n• 🎁 PROGRAMMATION PHYSIQUE ÉTÉ OFFERTE\n\nPRIX: 49€ (au lieu de 69€)\nValeur totale: 149€');
   };
 
   return (
