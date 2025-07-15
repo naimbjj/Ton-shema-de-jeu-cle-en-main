@@ -190,12 +190,12 @@ const BjjLandingPageV2 = () => {
         </div>
       </section>
 
-      {/* Social Proof */}
-      <section className="bg-gray-100 py-12">
+      {/* Social Proof - Simplified */}
+      <section className="bg-white py-12 border-t border-gray-200">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div className="space-y-2">
-              <div className="text-3xl font-bold text-blue-500">+200</div>
+              <div className="text-3xl font-bold text-gray-900">+200</div>
               <p className="text-gray-600">Débutants guidés</p>
             </div>
             <div className="space-y-2">
@@ -207,7 +207,7 @@ const BjjLandingPageV2 = () => {
               <p className="text-gray-600">Note moyenne</p>
             </div>
             <div className="space-y-2">
-              <div className="text-3xl font-bold text-blue-500">4.9/5</div>
+              <div className="text-3xl font-bold text-gray-900">4.9/5</div>
               <p className="text-gray-600">Satisfaction client</p>
             </div>
           </div>
