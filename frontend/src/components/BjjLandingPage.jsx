@@ -409,7 +409,7 @@ const BjjLandingPage = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+      <section className="py-20 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-8">
             <div className="space-y-4">
@@ -422,17 +422,23 @@ const BjjLandingPage = () => {
             </div>
 
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 max-w-md mx-auto">
-              <div className="space-y-4">
-                <div className="flex items-center justify-center space-x-4">
-                  <span className="text-3xl font-bold">39€</span>
-                  <span className="text-xl line-through opacity-60">69€</span>
-                  <Badge className="bg-red-500 text-white">-43%</Badge>
+              <div className="space-y-6">
+                <div className="bg-red-100 text-red-800 px-4 py-2 rounded-lg font-bold text-sm">
+                  🔥 OFFRE SPÉCIALE - 10 PREMIERS UNIQUEMENT
                 </div>
-                <p className="text-sm opacity-80">Offre de lancement limitée</p>
+                <div className="space-y-2">
+                  <div className="flex items-center justify-center space-x-4">
+                    <span className="text-4xl font-bold">49€</span>
+                    <span className="text-2xl line-through opacity-60">69€</span>
+                    <Badge className="bg-red-500 text-white">-29%</Badge>
+                  </div>
+                  <p className="text-lg font-semibold">+ Programmation physique été OFFERTE</p>
+                  <p className="text-sm opacity-80">Valeur totale : 149€</p>
+                </div>
                 <Button 
                   onClick={handlePurchase}
                   size="lg"
-                  className="w-full bg-white text-blue-600 hover:bg-gray-100 font-bold py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-200"
+                  className="w-full bg-white text-blue-900 hover:bg-gray-100 font-bold py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-200"
                 >
                   Je construis mon jeu maintenant
                 </Button>
