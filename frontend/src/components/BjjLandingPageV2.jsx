@@ -102,34 +102,88 @@ const BjjLandingPageV2 = () => {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-gray-50 to-white py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center space-y-8">
-            <div className="space-y-4">
-              <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                CONSTRUIS UN JEU 
-                <span className="text-blue-500"> DANGEREUX</span>
-                <br />DEPUIS TA GARDE
-              </h1>
-              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-                La méthode qui te donne un vrai jeu en garde - 
-                <strong className="text-blue-500"> sans te perdre dans 100 techniques</strong>
-              </p>
-              <p className="text-lg text-gray-700 max-w-2xl mx-auto">
-                Même si t'es débutant, construis un système logique et imparable en 4 semaines
-              </p>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-8">
+              <div className="space-y-4">
+                <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                  CONSTRUIS UN JEU 
+                  <span className="text-blue-500"> DANGEREUX</span>
+                  <br />DEPUIS TA GARDE
+                </h1>
+                <p className="text-xl text-gray-700 leading-relaxed">
+                  La méthode qui te donne un vrai jeu en garde - 
+                  <strong className="text-blue-500"> sans te perdre dans 100 techniques</strong>
+                </p>
+                <p className="text-lg text-gray-600">
+                  Même si t'es débutant, construis un système logique et imparable en 4 semaines
+                </p>
+              </div>
+
+              <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-lg">
+                <div className="flex items-center space-x-2 mb-2">
+                  <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
+                  <span className="text-red-800 font-bold text-lg">OFFRE SPÉCIALE - 10 PREMIERS UNIQUEMENT</span>
+                </div>
+                <div className="space-y-1">
+                  <div className="flex items-center space-x-3">
+                    <span className="text-3xl font-bold text-gray-900">49€</span>
+                    <span className="text-xl line-through text-gray-500">69€</span>
+                    <Badge className="bg-red-500 text-white">-29%</Badge>
+                  </div>
+                  <p className="text-red-700 font-medium">
+                    <strong>🎁 BONUS EXCLUSIF :</strong> Programmation physique été OFFERTE (valeur 30€)
+                  </p>
+                  <p className="text-sm text-gray-600">Valeur totale : 99€ → Tu économises 50€</p>
+                </div>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button 
+                  onClick={handlePurchase}
+                  size="lg"
+                  className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
+                >
+                  Je débloque mon jeu BJJ - 49€
+                  <ArrowRight className="ml-2 w-5 h-5" />
+                </Button>
+                <div className="flex items-center space-x-2 text-sm text-gray-600">
+                  <CheckCircle className="w-4 h-4 text-green-500" />
+                  <span>Accès immédiat + contenu à vie</span>
+                </div>
+              </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button 
-                onClick={handlePurchase}
-                size="lg"
-                className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
-              >
-                Je débloque mon jeu BJJ - 49€
-                <ArrowRight className="ml-2 w-5 h-5" />
-              </Button>
-              <div className="flex items-center space-x-2 text-sm text-gray-600">
-                <CheckCircle className="w-4 h-4 text-green-500" />
-                <span>Accès immédiat + contenu à vie</span>
+            <div className="relative">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl">
+                <img 
+                  src="https://images.unsplash.com/photo-1676220672943-5100a727ba36?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDJ8MHwxfHNlYXJjaHwyfHxqaXUlMjBqaXRzdXxlbnwwfHx8fDE3NTI2MDQ1NTV8MA&ixlib=rb-4.1.0&q=85"
+                  alt="Guard position BJJ"
+                  className="w-full h-96 object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                <div className="absolute bottom-6 left-6 text-white">
+                  <p className="text-lg font-bold">Position de garde fermée</p>
+                  <p className="text-sm opacity-90">Maîtrise totale du jeu</p>
+                </div>
+              </div>
+              
+              {/* Floating stats */}
+              <div className="absolute -top-4 -right-4 bg-white rounded-lg shadow-lg p-4 border">
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-blue-500">+200</div>
+                  <div className="text-xs text-gray-600">Étudiants</div>
+                </div>
+              </div>
+              
+              <div className="absolute -bottom-4 -left-4 bg-white rounded-lg shadow-lg p-4 border">
+                <div className="text-center">
+                  <div className="flex space-x-1 justify-center mb-1">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 text-yellow-500 fill-current" />
+                    ))}
+                  </div>
+                  <div className="text-xs text-gray-600">4.9/5</div>
+                </div>
               </div>
             </div>
           </div>
