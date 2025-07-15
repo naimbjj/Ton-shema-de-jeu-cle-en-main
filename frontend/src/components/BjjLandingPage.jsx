@@ -277,15 +277,15 @@ const BjjLandingPage = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl font-bold text-blue-900 mb-4">
               Bonus inclus dans ton pack
             </h2>
-            <p className="text-xl text-gray-600">
+            <p className="text-xl text-gray-700">
               Des ressources supplémentaires pour accélérer ta progression
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <Card className="border-0 shadow-lg">
               <CardHeader>
                 <div className="flex items-center space-x-3">
@@ -293,7 +293,7 @@ const BjjLandingPage = () => {
                     <Download className="w-6 h-6 text-red-600" />
                   </div>
                   <div>
-                    <CardTitle className="text-xl">PDF "10 erreurs à éviter"</CardTitle>
+                    <CardTitle className="text-xl text-blue-900">PDF "10 erreurs à éviter"</CardTitle>
                     <CardDescription>Les pièges les plus courants en garde</CardDescription>
                   </div>
                 </div>
@@ -313,7 +313,7 @@ const BjjLandingPage = () => {
                     <Play className="w-6 h-6 text-green-600" />
                   </div>
                   <div>
-                    <CardTitle className="text-xl">Vidéo "Être dangereux sur le dos"</CardTitle>
+                    <CardTitle className="text-xl text-blue-900">Vidéo "Être dangereux sur le dos"</CardTitle>
                     <CardDescription>Technique mentale et physique</CardDescription>
                   </div>
                 </div>
@@ -322,6 +322,26 @@ const BjjLandingPage = () => {
                 <p className="text-gray-600">
                   Comment développer l'état d'esprit du combattant qui reste dangereux 
                   même en position défensive.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-2 border-blue-900 shadow-lg bg-blue-50">
+              <CardHeader>
+                <div className="flex items-center space-x-3">
+                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
+                    <Trophy className="w-6 h-6 text-blue-900" />
+                  </div>
+                  <div>
+                    <CardTitle className="text-xl text-blue-900">🎁 PROGRAMMATION ÉTÉ</CardTitle>
+                    <CardDescription className="text-blue-700 font-medium">OFFERTE pour les 10 premiers !</CardDescription>
+                  </div>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-blue-800 font-medium">
+                  Programme physique spécial été pour être au top de ta forme en septembre. 
+                  Cardio, force, et mobilité adaptés au BJJ.
                 </p>
               </CardContent>
             </Card>
