@@ -12,19 +12,19 @@ const BjjLandingPage = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
+    <div className="min-h-screen bg-gradient-to-br from-white to-blue-50">
       {/* Header */}
-      <header className="bg-white shadow-sm">
+      <header className="bg-white shadow-sm border-b-2 border-blue-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <div className="flex justify-between items-center">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-blue-900 rounded-lg flex items-center justify-center">
                 <Target className="w-6 h-6 text-white" />
               </div>
-              <span className="text-xl font-bold text-gray-900">BJJ GUARD MASTER</span>
+              <span className="text-xl font-bold text-blue-900">BJJ GUARD MASTER</span>
             </div>
-            <Badge variant="destructive" className="text-sm font-medium">
-              OFFRE LIMITÉE
+            <Badge variant="destructive" className="text-sm font-medium bg-red-600 text-white">
+              10 PREMIERS UNIQUEMENT
             </Badge>
           </div>
         </div>
