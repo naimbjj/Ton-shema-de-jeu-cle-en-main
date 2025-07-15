@@ -161,10 +161,10 @@ const BjjLandingPage = () => {
       <section className="py-20 bg-blue-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl font-bold text-blue-900 mb-4">
               La solution : Un système complet pour dominer la garde
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
               Construis un jeu de garde logique et dangereux avec notre méthode éprouvée
             </p>
           </div>
@@ -173,9 +173,9 @@ const BjjLandingPage = () => {
             <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow duration-300">
               <CardHeader className="text-center">
                 <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Target className="w-8 h-8 text-blue-600" />
+                  <Target className="w-8 h-8 text-blue-900" />
                 </div>
-                <CardTitle className="text-xl text-gray-900">Mindmap Visual</CardTitle>
+                <CardTitle className="text-xl text-blue-900">Mindmap Visual</CardTitle>
               </CardHeader>
               <CardContent className="text-center">
                 <CardDescription className="text-base">
@@ -190,7 +190,7 @@ const BjjLandingPage = () => {
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Play className="w-8 h-8 text-green-600" />
                 </div>
-                <CardTitle className="text-xl text-gray-900">Vidéo Explicative</CardTitle>
+                <CardTitle className="text-xl text-blue-900">Vidéo Explicative</CardTitle>
               </CardHeader>
               <CardContent className="text-center">
                 <CardDescription className="text-base">
@@ -205,7 +205,7 @@ const BjjLandingPage = () => {
                 <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Calendar className="w-8 h-8 text-purple-600" />
                 </div>
-                <CardTitle className="text-xl text-gray-900">Programme 4 Semaines</CardTitle>
+                <CardTitle className="text-xl text-blue-900">Programme 4 Semaines</CardTitle>
               </CardHeader>
               <CardContent className="text-center">
                 <CardDescription className="text-base">
