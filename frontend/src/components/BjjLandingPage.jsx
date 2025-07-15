@@ -128,19 +128,19 @@ const BjjLandingPage = () => {
             <div className="space-y-6">
               <div className="space-y-4">
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-red-500 rounded-full mt-2" />
+                  <div className="w-2 h-2 bg-blue-900 rounded-full mt-2" />
                   <p className="text-gray-700">Tu ne sais pas quoi faire quand tu es sur le dos</p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-red-500 rounded-full mt-2" />
+                  <div className="w-2 h-2 bg-blue-900 rounded-full mt-2" />
                   <p className="text-gray-700">Tu apprends des techniques isolées sans comprendre le "jeu" global</p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-red-500 rounded-full mt-2" />
+                  <div className="w-2 h-2 bg-blue-900 rounded-full mt-2" />
                   <p className="text-gray-700">Tu bloques et tu subis en sparring</p>
                 </div>
                 <div className="flex items-start space-x-3">
-                  <div className="w-2 h-2 bg-red-500 rounded-full mt-2" />
+                  <div className="w-2 h-2 bg-blue-900 rounded-full mt-2" />
                   <p className="text-gray-700">Tu perds confiance et tu stagnes</p>
                 </div>
               </div>
