@@ -452,39 +452,39 @@ const BjjLandingPage = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
+      <footer className="bg-blue-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             <div>
               <div className="flex items-center space-x-3 mb-4">
-                <div className="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center">
-                  <Target className="w-5 h-5 text-white" />
+                <div className="w-8 h-8 bg-white rounded-lg flex items-center justify-center">
+                  <Target className="w-5 h-5 text-blue-900" />
                 </div>
                 <span className="text-lg font-bold">BJJ GUARD MASTER</span>
               </div>
-              <p className="text-gray-400">
+              <p className="text-blue-100">
                 La méthode complète pour maîtriser la garde fermée en BJJ
               </p>
             </div>
             
             <div>
               <h4 className="text-lg font-semibold mb-4">Contact</h4>
-              <p className="text-gray-400">
+              <p className="text-blue-100">
                 Questions ? support@bjjguardmaster.com
               </p>
             </div>
             
             <div>
               <h4 className="text-lg font-semibold mb-4">Garantie</h4>
-              <p className="text-gray-400">
+              <p className="text-blue-100">
                 Satisfait ou remboursé sous 30 jours
               </p>
             </div>
           </div>
           
-          <Separator className="my-8 bg-gray-800" />
+          <Separator className="my-8 bg-blue-800" />
           
-          <div className="text-center text-gray-400">
+          <div className="text-center text-blue-100">
             <p>&copy; 2024 BJJ Guard Master. Tous droits réservés.</p>
           </div>
         </div>
