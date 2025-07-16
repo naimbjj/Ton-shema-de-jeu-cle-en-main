@@ -348,7 +348,7 @@ const BjjLandingPageV2 = () => {
                   <div className={`w-16 h-16 ${module.color} rounded-full flex items-center justify-center mx-auto mb-4 text-white`}>
                     {module.icon}
                   </div>
-                  <div className="text-sm font-semibold text-blue-500 mb-2">
+                  <div className="text-sm font-semibold text-green-600 mb-2">
                     MODULE {index + 1}
                   </div>
                   <CardTitle className="text-xl text-gray-900">{module.title}</CardTitle>
