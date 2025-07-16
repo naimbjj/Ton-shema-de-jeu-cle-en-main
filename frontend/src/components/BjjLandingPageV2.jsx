@@ -410,7 +410,7 @@ const BjjLandingPageV2 = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-blue-500 to-blue-600 py-16">
+      <section className="bg-gradient-to-r from-green-600 to-green-700 py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="space-y-8">
             <div className="space-y-4">
