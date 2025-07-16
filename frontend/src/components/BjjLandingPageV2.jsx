@@ -29,9 +29,66 @@ import { PRODUCTS } from '../config/constants';
 
 const BjjLandingPageV2 = () => {
   const [activeModule, setActiveModule] = useState(1);
+  const [isProcessing, setIsProcessing] = useState(false);
+  const [paymentStep, setPaymentStep] = useState('initial'); // initial, processing, success, error
 
-  const handlePurchase = () => {
-    alert('Redirection vers le système de paiement...\n\nPACK COMPLET BJJ GUARD MASTER:\n• Mindmap visuel complet\n• Vidéo explicative détaillée\n• Plan d\'entraînement 4 semaines\n• PDF "10 erreurs à éviter"\n• Vidéo "Être dangereux sur le dos"\n• 🎁 PROGRAMMATION PHYSIQUE ÉTÉ OFFERTE (valeur 30€)\n\nPRIX NORMAL: 69€\nPRIX AUJOURD\'HUI: 49€\nÉCONOMIE TOTALE: 50€\n\nAccès immédiat + contenu à vie');
+  const handlePurchase = async () => {
+    setIsProcessing(true);
+    setPaymentStep('processing');
+    
+    try {
+      // Simuler la collecte des données utilisateur
+      const customerEmail = prompt('Entrez votre email pour continuer:');
+      const customerName = prompt('Entrez votre nom:');
+      
+      if (!customerEmail || !customerName) {
+        setIsProcessing(false);
+        setPaymentStep('initial');
+        return;
+      }
+      
+      // Créer le paiement
+      const paymentData = {
+        amount: PRODUCTS.GUARD_MASTER.currentPrice,
+        currency: PRODUCTS.GUARD_MASTER.currency,
+        product_type: PRODUCTS.GUARD_MASTER.type,
+        customer_email: customerEmail,
+        customer_name: customerName
+      };
+      
+      const payment = await paymentService.createPayment(paymentData);
+      
+      // Simuler le succès du paiement après 2 secondes
+      setTimeout(async () => {
+        try {
+          await paymentService.simulatePaymentSuccess(payment.payment_id);
+          setPaymentStep('success');
+          
+          // Afficher le message de succès
+          alert(`🎉 PAIEMENT RÉUSSI ! 🎉\n\n` +
+                `Merci ${customerName} !\n\n` +
+                `✅ Accès immédiat à ton compte\n` +
+                `✅ Mindmap + Vidéo explicative\n` +
+                `✅ Programme 4 semaines\n` +
+                `✅ PDF "10 erreurs à éviter"\n` +
+                `✅ Vidéo "Être dangereux sur le dos"\n` +
+                `✅ 🎁 Programmation physique été OFFERTE\n\n` +
+                `Un email de confirmation a été envoyé à ${customerEmail}\n\n` +
+                `ID de paiement: ${payment.payment_id}`);
+          
+        } catch (error) {
+          setPaymentStep('error');
+          alert('Erreur lors du traitement du paiement: ' + error.message);
+        }
+        
+        setIsProcessing(false);
+      }, 2000);
+      
+    } catch (error) {
+      setIsProcessing(false);
+      setPaymentStep('error');
+      alert('Erreur lors de la création du paiement: ' + error.message);
+    }
   };
 
   const faqData = [
