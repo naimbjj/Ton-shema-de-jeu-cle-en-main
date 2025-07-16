@@ -417,7 +417,7 @@ const BjjLandingPageV2 = () => {
               <h2 className="text-4xl font-bold text-white">
                 Prêt à construire ton jeu de garde ?
               </h2>
-              <p className="text-xl text-blue-100">
+              <p className="text-xl text-green-100">
                 Rejoins les +200 pratiquants qui ont transformé leur garde
               </p>
             </div>
