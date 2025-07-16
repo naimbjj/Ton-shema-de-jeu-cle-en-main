@@ -316,7 +316,7 @@ const BjjLandingPageV2 = () => {
               <img 
                 src={competitorImage}
                 alt="BJJ competitor in action"
-                className="w-full h-80 object-cover rounded-lg shadow-lg"
+                className="w-full h-80 object-cover object-center rounded-lg shadow-lg"
               />
             </div>
           </div>
