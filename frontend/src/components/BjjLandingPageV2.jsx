@@ -478,7 +478,7 @@ const BjjLandingPageV2 = () => {
           <Accordion type="single" collapsible className="space-y-4">
             {faqData.map((faq, index) => (
               <AccordionItem key={index} value={`item-${index}`} className="bg-white rounded-lg shadow-sm">
-                <AccordionTrigger className="px-6 py-4 text-left font-semibold text-gray-900 hover:text-blue-500">
+                <AccordionTrigger className="px-6 py-4 text-left font-semibold text-gray-900 hover:text-green-600">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="px-6 pb-4 text-gray-600">
