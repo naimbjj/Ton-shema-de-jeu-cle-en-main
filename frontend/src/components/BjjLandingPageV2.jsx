@@ -201,11 +201,21 @@ const BjjLandingPageV2 = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button 
                   onClick={handlePurchase}
+                  disabled={isProcessing}
                   size="lg"
-                  className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
+                  className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 text-lg font-bold shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
                 >
-                  Je débloque mon jeu BJJ - 49€
-                  <ArrowRight className="ml-2 w-5 h-5" />
+                  {isProcessing ? (
+                    <>
+                      <Loader2 className="mr-2 w-5 h-5 animate-spin" />
+                      Traitement...
+                    </>
+                  ) : (
+                    <>
+                      Je débloque mon jeu BJJ - 49€
+                      <ArrowRight className="ml-2 w-5 h-5" />
+                    </>
+                  )}
                 </Button>
                 <div className="flex items-center space-x-2 text-sm text-gray-600">
                   <CheckCircle className="w-4 h-4 text-green-500" />
