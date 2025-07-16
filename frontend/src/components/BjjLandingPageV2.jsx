@@ -340,7 +340,7 @@ const BjjLandingPageV2 = () => {
               <Card 
                 key={module.id} 
                 className={`border-0 shadow-lg hover:shadow-xl transition-all duration-300 cursor-pointer ${
-                  activeModule === module.id ? 'ring-2 ring-blue-500' : ''
+                  activeModule === module.id ? 'ring-2 ring-green-600' : ''
                 }`}
                 onClick={() => setActiveModule(module.id)}
               >
