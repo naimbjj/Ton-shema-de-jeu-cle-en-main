@@ -430,7 +430,7 @@ const BjjLandingPageV2 = () => {
                 <div className="space-y-2">
                   <div className="flex items-center justify-center space-x-4">
                     <span className="text-4xl font-bold text-white">49€</span>
-                    <span className="text-2xl line-through text-blue-200">69€</span>
+                    <span className="text-2xl line-through text-green-200">69€</span>
                     <Badge className="bg-orange-500 text-white">-29%</Badge>
                   </div>
                   <p className="text-lg font-semibold text-green-100">+ Programmation physique été OFFERTE</p>
