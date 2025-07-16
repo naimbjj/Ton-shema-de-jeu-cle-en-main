@@ -454,7 +454,7 @@ const BjjLandingPageV2 = () => {
                     </>
                   )}
                 </Button>
-                <p className="text-xs text-blue-200">
+                <p className="text-xs text-green-200">
                   Accès immédiat + contenu à vie
                 </p>
               </div>
