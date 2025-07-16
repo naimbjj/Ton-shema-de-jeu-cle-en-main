@@ -20,9 +20,12 @@ import {
   Award,
   MapPin,
   Clock,
-  Brain
+  Brain,
+  Loader2
 } from 'lucide-react';
 import { heroImage, mindmapImage, championImage, competitorImage } from '../assets/images';
+import { paymentService } from '../services/apiService';
+import { PRODUCTS } from '../config/constants';
 
 const BjjLandingPageV2 = () => {
   const [activeModule, setActiveModule] = useState(1);
