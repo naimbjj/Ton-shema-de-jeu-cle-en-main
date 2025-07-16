@@ -433,8 +433,8 @@ const BjjLandingPageV2 = () => {
                     <span className="text-2xl line-through text-blue-200">69€</span>
                     <Badge className="bg-orange-500 text-white">-29%</Badge>
                   </div>
-                  <p className="text-lg font-semibold text-blue-100">+ Programmation physique été OFFERTE</p>
-                  <p className="text-sm text-blue-200">Valeur totale : 99€ → Tu économises 50€</p>
+                  <p className="text-lg font-semibold text-green-100">+ Programmation physique été OFFERTE</p>
+                  <p className="text-sm text-green-200">Valeur totale : 99€ → Tu économises 50€</p>
                 </div>
                 <Button 
                   onClick={handlePurchase}
