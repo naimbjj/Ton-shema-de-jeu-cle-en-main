@@ -438,11 +438,21 @@ const BjjLandingPageV2 = () => {
                 </div>
                 <Button 
                   onClick={handlePurchase}
+                  disabled={isProcessing}
                   size="lg"
-                  className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-200"
+                  className="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-4 text-lg shadow-lg hover:shadow-xl transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
                 >
-                  Je débloque mon jeu BJJ - 49€
-                  <ArrowRight className="ml-2 w-5 h-5" />
+                  {isProcessing ? (
+                    <>
+                      <Loader2 className="mr-2 w-5 h-5 animate-spin" />
+                      Traitement...
+                    </>
+                  ) : (
+                    <>
+                      Je débloque mon jeu BJJ - 49€
+                      <ArrowRight className="ml-2 w-5 h-5" />
+                    </>
+                  )}
                 </Button>
                 <p className="text-xs text-blue-200">
                   Accès immédiat + contenu à vie
