@@ -228,20 +228,20 @@ const BjjLandingPageV2 = () => {
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
                 <img 
                   src={mindmapImage}
-                  alt="JEU AU SOL STRUCTURÉ - Le mindmap pour un BJJ cohérent"
-                  className="w-full h-96 object-cover"
+                  alt="FINI DE SUBIR EN GARDE FERMÉE - Transforme ta garde en arme redoutable"
+                  className="w-full h-96 object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-6 left-6 text-white">
-                  <p className="text-lg font-bold">JEU AU SOL STRUCTURÉ</p>
-                  <p className="text-sm opacity-90">Le mindmap pour un BJJ cohérent</p>
+                  <p className="text-lg font-bold">FINI DE SUBIR EN GARDE</p>
+                  <p className="text-sm opacity-90">Transforme ta garde en arme redoutable</p>
                 </div>
               </div>
               
               {/* Floating stats */}
               <div className="absolute -top-4 -right-4 bg-white rounded-lg shadow-lg p-4 border">
                 <div className="text-center">
-                  <div className="text-2xl font-bold text-blue-500">+200</div>
+                  <div className="text-2xl font-bold text-green-600">+200</div>
                   <div className="text-xs text-gray-600">Étudiants</div>
                 </div>
               </div>
