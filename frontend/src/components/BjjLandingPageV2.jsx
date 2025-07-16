@@ -167,16 +167,16 @@ const BjjLandingPageV2 = () => {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                  CONSTRUIS UN JEU 
-                  <span className="text-blue-500"> DANGEREUX</span>
-                  <br />DEPUIS TA GARDE
+                  FINI DE SUBIR EN GARDE
+                  <br />
+                  <span className="text-green-600">PASSE À L'ATTAQUE</span>
                 </h1>
                 <p className="text-xl text-gray-700 leading-relaxed">
-                  La méthode qui te donne un vrai jeu en garde - 
-                  <strong className="text-blue-500"> sans te perdre dans 100 techniques</strong>
+                  La méthode qui transforme ta garde fermée en 
+                  <strong className="text-green-600"> arme redoutable et imparable</strong>
                 </p>
                 <p className="text-lg text-gray-600">
-                  Même si t'es débutant, construis un système logique et imparable en 4 semaines
+                  Même si t'es débutant, deviens le cauchemar de tes adversaires en 4 semaines
                 </p>
               </div>
 
